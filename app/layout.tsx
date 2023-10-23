@@ -5,8 +5,9 @@ import PilatDemi from "next/font/local";
 import { NextFontWithVariable } from "next/dist/compiled/@next/font";
 
 const inter: NextFontWithVariable = Inter({
+  subsets: ["latin-ext"],
+  display: "swap",
   variable: "--font-inter",
-  subsets: ["latin"],
 });
 const pilatDemi: NextFontWithVariable = PilatDemi({
   src: "../public/fonts/PilatExtended-DemiBold.woff2",
@@ -25,15 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt">
-      <head>
-        <title>Title</title>
-        <meta></meta>
-      </head>
-
-      <body className={`${inter.variable} ${pilatDemi.variable}`}>
-        {children}
-      </body>
-    </html>
+    <main className={`${inter.variable} ${pilatDemi.variable}`}>
+      {children}
+    </main>
   );
 }
