@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import WideButton from "@/components/WideButton";
+import WideButton from "@/components/Buttons/WideButton";
 
 export default function Home() {
   return (
