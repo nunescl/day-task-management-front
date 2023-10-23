@@ -1,8 +1,7 @@
+import "../styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import PilatDemi from "next/font/local";
-
-import "./globals.css";
 import { NextFontWithVariable } from "next/dist/compiled/@next/font";
 
 const inter: NextFontWithVariable = Inter({
@@ -15,9 +14,9 @@ const pilatDemi: NextFontWithVariable = PilatDemi({
   variable: "--font-pilat-demi",
 });
 
-export const metadata: Metadata = {
-  title: "",
-  description: "",
+const metadata: Metadata = {
+  title: "Manage your tasks",
+  description: "Fun",
 };
 
 export default function RootLayout({
@@ -26,7 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt">
+      <head>
+        <title>Title</title>
+        <meta></meta>
+      </head>
+
       <body className={`${inter.variable} ${pilatDemi.variable}`}>
         {children}
       </body>
