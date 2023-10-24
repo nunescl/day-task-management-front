@@ -28,6 +28,7 @@ export default function Signin() {
           title="Password"
           placeholder=""
           type="password"
+          signin
         />
 
         <WideButton>Log In</WideButton>
