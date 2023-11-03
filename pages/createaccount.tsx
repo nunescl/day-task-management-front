@@ -3,7 +3,7 @@ import WideButton from "@/components/Buttons/WideButton";
 import TextInput from "@/components/Inputs/TextInput";
 import Image from "next/image";
 
-export default function CreateAccount() {
+export default function CreateAccount(): React.ReactElement {
   return (
     <>
       <div className="flex flex-col items-center w-[85vw] mx-[7.5vw] mt-[1vh] font-inter">
@@ -35,19 +35,6 @@ export default function CreateAccount() {
           placeholder=""
           type="password"
         />
-        {/* <div className="flex gap-2 mt-[-10px] mb-[33px]">
-          <input
-            type="checkbox"
-            className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#FED36A] checked:bg-[#FED36A] checked:before:bg-[#FED36A] hover:before:opacity-10"
-          ></input>
-          <label className="text-sm text-[#8CAAB9] text-justify">
-            I have read & agreed to DayTask{" "}
-            <a href="" className="text-[#FED36A]">
-              Privacy Policy, Terms & Condition
-            </a>
-          </label>
-        </div> */}
-
         <div className="inline-flex items-center mt-[-10px] mb-[33px]">
           <label
             className="relative flex items-center p-3 rounded-full cursor-pointer"
