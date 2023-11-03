@@ -3,7 +3,7 @@ import WideButton from "@/components/Buttons/WideButton";
 import Image from "next/image";
 import TransparentButton from "@/components/Buttons/TransparentButton";
 
-export default function Signin() {
+export default function Signin(): React.ReactElement {
   return (
     <>
       <div className="flex flex-col items-center w-[85vw] mx-[7.5vw] my-[4vh] font-inter">
