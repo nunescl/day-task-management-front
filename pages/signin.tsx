@@ -2,10 +2,14 @@ import TextInput from "@/components/Inputs/TextInput";
 import WideButton from "@/components/Buttons/WideButton";
 import Image from "next/image";
 import TransparentButton from "@/components/Buttons/TransparentButton";
+import Head from "next/head";
 
 export default function Signin(): React.ReactElement {
   return (
     <>
+      <Head>
+        <title>Sign In</title>
+      </Head>
       <div className="flex flex-col items-center w-[85vw] mx-[7.5vw] my-[4vh] font-inter">
         <Image
           src="/logodtask.svg"

@@ -1,11 +1,15 @@
 import TransparentButton from "@/components/Buttons/TransparentButton";
 import WideButton from "@/components/Buttons/WideButton";
 import TextInput from "@/components/Inputs/TextInput";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function CreateAccount(): React.ReactElement {
   return (
     <>
+      <Head>
+        <title>Create Account</title>
+      </Head>
       <div className="flex flex-col items-center w-[85vw] mx-[7.5vw] mt-[1vh] font-inter">
         <Image
           src="/logodtask.svg"
